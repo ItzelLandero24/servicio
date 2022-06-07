@@ -259,7 +259,7 @@
                                             <input type="checkbox" name="cb-acta" value="gusta"> Acta de nacimiento<br>
                                             <input type="checkbox" name="cb-secundaria" value="gusta"> Certificado de estudios de secundaria<br>
                                             <input type="checkbox" name="cb-prepa" value="gusta"> Certificado de estudios de bachillerato<br>
-                                            <input type="checkbox" name="cb-carta" value="gusta"> Carta de buena conducta de bachillerato<br>
+                                            <input type="checkbox" name="cb-cartas" value="gusta"> Carta de buena conducta de bachillerato<br>
                                             <input type="checkbox" name="cb-constancia" value="gusta"> Constancia de terminación de estudios<br>
                                             <input type="checkbox" name="cb-fotos" value="gusta"> 4 Fotografías<br>
                                             <input type="checkbox" name="cb-certificado" value="gusta"> Certificado médico<br>
