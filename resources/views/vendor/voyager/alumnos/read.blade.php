@@ -231,6 +231,59 @@
                                 </tr>
                             </table>
 
+                            <br>
+                            <br>
+                            <table style="width: 100%;">
+                                <tr>
+                                    <td id="datosescuela"><b>DATOS ACADEMICOS</b></td>
+                                </tr>
+                                <tr>
+                                    <td style="height: 15px"></td>
+                                </tr>
+                                <tr>
+                                    <td style="height: 15px"></td>
+                                </tr>
+                            </table>
+                            <table id="datostablaescuela">
+                                <tr>
+                                    <td><b>INSCRITO:</b> {{ ($dato->inscrito == 1) ? 'Inscrito' : 'No Inscrito' }}</td>
+                                    <td><b>BAJA:</b> {{ ($dato->baja == 1) ? 'Si' : 'No' }}</td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+
+                                            Documentos:<br> <br>
+
+                                            <input type="checkbox" name="cb-acta" value="gusta"> Acta de nacimiento<br>
+                                            <input type="checkbox" name="cb-secundaria" value="gusta"> Certificado de estudios de secundaria<br>
+                                            <input type="checkbox" name="cb-prepa" value="gusta"> Certificado de estudios de bachillerato<br>
+                                            <input type="checkbox" name="cb-carta" value="gusta"> Carta de buena conducta de bachillerato<br>
+                                            <input type="checkbox" name="cb-constancia" value="gusta"> Constancia de terminación de estudios<br>
+                                            <input type="checkbox" name="cb-fotos" value="gusta"> 4 Fotografías<br>
+                                            <input type="checkbox" name="cb-certificado" value="gusta"> Certificado médico<br>
+
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+
+                                            Documentos:<br> <br>
+
+                                            <input type="checkbox" name="cb-acta" value="gusta"> Acta de nacimiento<br>
+                                            <input type="checkbox" name="cb-secundaria" value="gusta"> Certificado de estudios de secundaria<br>
+                                            <input type="checkbox" name="cb-prepa" value="gusta"> Certificado de estudios de bachillerato<br>
+                                            <input type="checkbox" name="cb-carta" value="gusta"> Carta de buena conducta de bachillerato<br>
+                                            <input type="checkbox" name="cb-fotos" value="gusta"> Fotografías<br>
+                                            <input type="checkbox" name="cb-otros" value="gusta"> Otros<br>
+                                            <input type="checkbox" name="cb-credencial" value="gusta"> Devuelve credencial<br>
+
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+
 
     {{-- Single delete modal --}}
     <div class="modal modal-danger fade" tabindex="-1" id="delete_modal" role="dialog">
