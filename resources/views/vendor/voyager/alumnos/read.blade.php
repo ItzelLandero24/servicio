@@ -235,7 +235,7 @@
                             <br>
                             <table style="width: 100%;">
                                 <tr>
-                                    <td id="datosescuela"><b>DATOS ACADEMICOS</b></td>
+                                    <td id="datosescuela"><b>DATOS ACADEMICOSS</b></td>
                                 </tr>
                                 <tr>
                                     <td style="height: 15px"></td>
