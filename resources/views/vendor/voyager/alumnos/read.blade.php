@@ -140,7 +140,7 @@
                             @endif
                             <table>
                             <tr>
-                            <td  style="width: 100%; vspace: 1"><img src="https://telegra.ph/file/ca8ab134d4687616726a6.jpg" width="250" height="80"></td>
+                            <td  style="width: 100%; vspace: 1"><img src="https://telegra.ph/file/0ff8dc90c9e0bfb39b75c.jpg" width="100%" height="80"></td>
                             </tr>
                             </table>
                             <table id="okey">
