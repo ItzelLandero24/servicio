@@ -27,7 +27,7 @@
 </head>
 <body>
     <p>hola</p>
-    <a class="button" href="{{ route('voyager.alumnos.index') }}">←Regresar</a>
+    <a class="button" href="{{ route('voyager.alumnos.index') }}">←Regresar atras</a>
 
 </body>
 </html>
