@@ -1,0 +1,60 @@
+body {
+    background-color:#f9f9f9;
+}
+.badge {
+    font-size: 25px;
+}
+#estilo {
+    width: 50rem;
+    height: 5rem;
+    margin: 20px 80px 50px 365px;
+}
+#imagenlogo {
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+   
+}
+#cuadro {
+    background-color: #015052;
+    color: aliceblue;
+    height: 500px;
+    width: 800px;
+    margin:-30px 20px 50px 20px;
+}
+#boton {
+    background-color: #0d6efd;
+    width: 100%;
+    height: 40px;
+    border-radius: 0.25rem;
+    line-height: 1.5;
+    color: aliceblue;
+}
+#boton1 {
+    background-color: #a5aec0;
+    width: 15%;
+    height: 40px;
+    border-radius: 0.25rem;
+    line-height: 1.5;
+    color: rgb(15, 15, 1);
+    float: right;
+}
+.button {
+    background-color: #2ecc71;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    width: auto;
+    height:auto;
+    float: right;
+    margin: 20px 20px 20px 20px;
+    }
+    .button:hover {
+    background-color: #d7681e;
+    color: #fff;
+    }
