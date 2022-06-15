@@ -27,39 +27,46 @@
     #solicitud {
        text-align: center;
        font-size:  23px;
-       background-color: #ebe5e5d9;
+       background-color: #015052;
+       color: white;
        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-       width:60px;
+       width:70px;
+       height: 60px;
      }
      #solicitud:hover {
-        box-shadow: 0 0.1rem 0.4rem rgba(6, 172, 122, 0.583);
+        box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.583);
      }
      #datosalumno {
        text-align: center;
        font-size:  23px;
-       background-color: #ebe5e5d9;
+       background-color: #015052;
+       color: white;
        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
        width:60px;
+       height: 50px;
+
      }
      #datosalumno:hover {
-        box-shadow: 0 0.1rem 0.4rem rgba(6, 172, 122, 0.583);
+        box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.583);
     }
      #folio {
          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-         font-size: 15px;
+         font-size: 20px;
          background-color: rgb(255, 255, 255)
          }
 
      #fecha {
          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-         font-size: 15px;
+         font-size: 20px;
          background-color: rgb(255, 255, 255)
          }
 
     #datosescuela {
        text-align: center;
        font-size:  23px;
-       background-color: #ebe5e5d9;
+       background-color: #015052;
+       color: white;
+       height: 60px;
        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
        width:60px;
      }
@@ -139,9 +146,6 @@
                                 Se ha realizado el registro de alumnos
                             </div>
                             @else
-                            <div class="alert alert-warning" role="alert">
-                                Los datos del registro estan en proceso
-                            </div>
                             @endif
                             <table>
                             <tr>
@@ -150,8 +154,9 @@
                             </table>
                             <table id="okey">
                                 <tr>
+                                    <br>
                                         <h1 id="titulo">
-                                          UNIVERSIDAD TECNOLÓGICA DE CANDELARIA <br><br>
+                                          U N I V E R S I D A D   T E C N O L Ó G I C A   D E   C A N D E L A R I A <br><br>
                                         </h1>
                                     </td>
                                 </tr>
@@ -166,13 +171,13 @@
                                 </tr>
                                 <tr>
                                     <br>
-                                    <td id="solicitud" colspan="3"><b>SOLICITUD DE REGISTRO</b>  </td>
+                                    <td id="solicitud" colspan="3"><b>✉️ S O L I C I T U D   D E   R E G I S T R O</b>  </td>
                                 </tr>
                                 <tr>
                                     <td style="height: 15px"></td>
                                 </tr>
                                 <tr>
-                                    <td id="datosalumno" colspan="3"><b>DATOS DEL ALUMNO</b></td>
+                                    <td id="datosalumno" colspan="3"><b>D A T O S  D E L  A L U M N O</b></td>
                                 </tr>
                                 <tr>
                                     <td style="height: 15px"></td>
@@ -218,7 +223,7 @@
                             <br>
                             <table style="width: 100%;">
                                 <tr>
-                                    <td id="datosescuela"><b>DATOS DE LA ESCUELA DE PROCEDENCIA</b></td>
+                                    <td id="datosescuela"><b>D A T O S   D E   L A   E S C U E L A   D E   P R O C E D E N C I A</b></td>
                                 </tr>
                                 <tr>
                                     <td style="height: 15px"></td>
@@ -240,7 +245,7 @@
                             <br>
                             <table style="width: 100%;">
                                 <tr>
-                                    <td id="datosescuela"><b>DATOS ACADEMICOSS</b></td>
+                                    <td id="datosescuela"><b>D A T O S   A C A D E M I C O S</b></td>
                                 </tr>
                                 <tr>
                                     <td style="height: 15px"></td>
