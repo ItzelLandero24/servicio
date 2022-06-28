@@ -1,5 +1,5 @@
 @extends('voyager::master')
-@section('page_title', 'Calificación')
+@section('page_title', 'Calificaciones')
 @section('page_header')
     <div class="container-fluid">
         <h1 class="page-title">
