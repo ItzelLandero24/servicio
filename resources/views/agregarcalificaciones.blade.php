@@ -1,4 +1,4 @@
-@extends('voyager::master')
+@extends('voyager::master') hola
 @section('page_title', 'Agregar Calificaciones de alumnos')
 @section('page_header')
     <div class="container-fluid">
