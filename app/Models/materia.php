@@ -12,4 +12,4 @@ class materia extends Model
     use HasFactory;
 }
 
-//Modelomateriasss
+//Modelomateriassss
