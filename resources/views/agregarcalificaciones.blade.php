@@ -1,5 +1,5 @@
-@extends('voyager::master') hola
-@section('page_title', 'Agregar Calificaciones de alumnos')
+@extends('voyager::master')
+@section('page_title', 'Agregar Calificaciones')
 @section('page_header')
     <div class="container-fluid">
         <h1 class="page-title">
@@ -38,7 +38,7 @@
                 <div id="container">
                     <div class="row">
                         <form action="/admin/calificacion/crear" class="form-inline" method="POST">
-                            <input type="hidden" name="curso" value="{{ $curso->id }}">
+                            <input type="hidden" name="alumno" value="{{ $alumno->id }}">
                             <div class="form-group col-md-12">
                                 <label for="parcial">Parcial: </label>
                                 <select name="parcial" id="parcial" class="form-control select2 select2-hidden-accessible">
@@ -49,7 +49,7 @@
                                 </select>
                             </div>
                             @csrf
-                            @foreach ($curso->materias() as $materia)
+                            @foreach ($alumno->materias() as $materia)
                                 <div class="form-group col-md-12">
                                 <label for="materia_{{ $materia->id }}">{{ $materia->nombre }}: </label>
                                 <input type="number" name="materias[{{ $materia->id }}]" class="form-control" max="10" min="0" id="materia_{{ $materia->id }}">

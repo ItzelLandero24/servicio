@@ -5,6 +5,7 @@ use TCG\Voyager\Facades\Voyager;
 use App\Http\Controllers\alumnoController;
 use App\Http\Controllers\RegistrarController;
 use App\Http\Controllers\bajaController;
+use App\Http\Controllers\calificacioneController;
 
 
 /*
@@ -32,6 +33,13 @@ Route::group(['prefix' => 'admin'], function () {
 Route::get('login', '\TCG\Voyager\Http\Controllers\VoyagerAuthController@login')->name('login');
 Route::view('registro',  'registro')->name('registrar');
 Route::post('/registro',  [RegistrarController::class, 'registerUser'])->name('registrar');
+Route::get('admin/calificacion/crear', [alumnoController::class, 'nuevacalificacion']);
+Route::get('admin/calificacion/{alumno}', [alumnoController::class, 'calificacion'])->name('calificacion');
+Route::get('admin/imprimir/{alumno}', [alumnoController::class, 'imprimir'])->name('imprimircalificacion');
+Route::get('admin/calificacion/crear/{alumno}', [alumnoController::class, 'nuevacalificacion'])->name('nuevacalificacion');
+Route::post('admin/calificacion/crear', [calificacioneController::class, 'crear']);
+
+
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

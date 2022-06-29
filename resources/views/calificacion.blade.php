@@ -5,7 +5,7 @@
         <h1 class="page-title">
             <i class="voyager-logbook"></i> Calificación de {{ $alumno->nombre }}
         </h1>
-        <a href="{{ url('admin/cursos/'.$curso->id) }}" class="btn btn-warning"><span class="glyphicon glyphicon-list"></span> Regresar</a>
+        <a href="{{ url('admin/cursos/'.$alumno->id) }}" class="btn btn-warning"><span class="glyphicon glyphicon-list"></span> Regresar</a>
         <a class="btn btn-info" href="{{ url('admin/imprimir/'.$alumno->id) }}" target="_blank"><i class="fa fa-print"></i>Imprimir</a>
     </div>
 @stop

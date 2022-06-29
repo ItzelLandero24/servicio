@@ -127,7 +127,7 @@
             <i class="glyphicon glyphicon-list"></i> <span class="hidden-xs hidden-sm">{{ __('voyager::generic.return_to_list') }}</span>
         </a>
         <a class="btn btn-info" href="{{ url('admin/registro/'.$dato->id) }}" target="_blank"><i class="voyager-external"></i>Imprimir</a>
-
+        <a href="{{ url('admin/calificacion/'.$dataTypeContent->getKey()) }}" class="btn btn-info">Calificación</a>
 
         @endcan
     </h1>

@@ -9,5 +9,9 @@ class carrera extends Model
 {
     use HasFactory;
 
+    public function alumnos()
+    {
+        return $this->hasMany(alumno::class);
+    }
 
 }
