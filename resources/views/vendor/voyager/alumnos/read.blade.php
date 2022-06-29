@@ -90,6 +90,11 @@
         color:beige;
        border-radius: 30px;
     }
+    #estilo {
+      width: 80rem;
+      height: 6rem;
+      margin: 20px 80px 50px 80px;
+}
 
 </style>
 
@@ -144,7 +149,7 @@
                             @endif
                             <table>
                             <tr>
-                            <td  style="width: 100%; vspace: 1"><img src="https://telegra.ph/file/0ff8dc90c9e0bfb39b75c.jpg" width="100%" height="80"></td>
+                            <td  style="width: 100%; vspace: 1"><img id="estilo"src="https://telegra.ph/file/1a5576e0b68bbde6e6096.png" ></td>
                             </tr>
                             </table>
                             <table id="okey">
