@@ -5,7 +5,7 @@
         <h1 class="page-title">
             <i class="voyager-logbook"></i> Calificación de {{ $alumno->nombre }}
         </h1>
-        <a href="{{ url('admin/cursos/'.$alumno->id) }}" class="btn btn-warning"><span class="glyphicon glyphicon-list"></span> Regresar</a>
+        <a href="{{ url('admin/alumnos/'.$alumno->nombre) }}" class="btn btn-warning"><span class="glyphicon glyphicon-list"></span> Regresar</a>
         <a class="btn btn-info" href="{{ url('admin/imprimir/'.$alumno->id) }}" target="_blank"><i class="fa fa-print"></i>Imprimir</a>
     </div>
 @stop
@@ -16,7 +16,7 @@
 			<div class="panel-body">
                 <div id="container">
                     <div class="row">
-                        <div class="col-md-3"><img src="{{ asset('storage/'.'bg_app.jpg') }}" width="120" class="img-responsive"></div>
+                        <div class="col-md-3"><img src="{{ asset('storage/'.'Icon.png') }}" width="120" class="img-responsive"></div>
                         <div class="col-md-6 text-center">
                             <h4>
                             UNIVERSIDAD TECNOLOGICA DE CANDELARIA<br><br>
@@ -27,9 +27,8 @@
                         <div class="col-md-3"></div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4">Alumno: {{ $alumno->name }}</div>
-                        <div class="col-md-4">Matricula: </div>
-                        <div class="col-md-4 text-right">Carrera: {{ $alumno->carrera->carrera }}</div>
+                        <div class="col-md-4">Alumno: {{ $alumno->nombre}}</div>
+                        <div class="col-md-4 text-right">Carrera: {{ $alumno->Carrera }}</div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
@@ -41,50 +40,20 @@
                                     <th>II Parcial</th>
                                     <th>III Parcial</th>
                                     <th>IV Parcial</th>
-                                    <th>Extraordinario</th>
+                                    <th>Remedial</th>
                                     <th>Final</th>
                                     <th style="border: none"></th>
                                     <th>Extraordinario</th>
-                                    <th>baja</th>
+
 
                                 </tr>
-                                </thead>
-                                <tbody>
-                                    @php
-                                        $suma=0;
-                                    @endphp
-                                    @foreach ($alumno->materias() as $materia)
-                                        <tr>
-                                            <td>{{ $materia->nombre }}</td>
-                                            <td>{{ $alumno->calificacion($materia->id, 1) }}</td>
-                                            <td>{{ $alumno->calificacion($materia->id, 2) }}</td>
-                                            <td>{{ $alumno->calificacion($materia->id, 3) }}</td>
-                                            <td>{{ number_format($alumno->promedio($materia->id), 1) }}</td>
-                                            <td style="width: 100px; border:none;"></td>
-                                            <td>{{ $alumno->calificacion($materia->id, 4) }}</td>
-                                            <td>{{ $alumno->calificacion($materia->id, 5) }}</td>
-                                            <td>{{ $alumno->calificacion($materia->id, 6) }}</td>
-                                            @php
-                                                $suma+=$alumno->promedio($materia->id)
-                                            @endphp
-                                        </tr>
-                                    @endforeach
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <td colspan="2"></td>
-                                        <td colspan="2">Promedio final</td>
-                                        <td>{{ number_format($suma/$alumno->materias()->count(), 1) }}</td>
-                                    </tr>
-                                </tfoot>
+
                             </table>
                         </div>
                     </div>
                     <div class="row">
                         <p>
-                            La escala de calificaciones parciales es del 0.00 al 10.00. El alumno NO TENDRÁ DERECHO A
-PRESENTAR EL EXAMEN PARCIAL de cada asignatura CUANDO NO OBTENGA EL PROMEDIO
-MÍNIMO PARCIAL APROBATORIO de 6.00 o cuando no alcance el 80% de asistencia a clases.
+                            La escala de calificaciones es del 0 al 10 y la minima aprobatoria es de 8
                         </p>
                     </div>
                     <div class="row">
@@ -97,10 +66,10 @@ MÍNIMO PARCIAL APROBATORIO de 6.00 o cuando no alcance el 80% de asistencia a c
                         </div>
                         <div class="col-md-6 text-center">
                             Vo.Bo<br>
-                            DIRECTOR DEL PLANTEL
+                            Lic
                             <br><br><br>
                             <hr width="70%" size="2">
-                            LICENCIADA
+                            Lic
                         </div>
                     </div>
                 </div>
@@ -108,3 +77,4 @@ MÍNIMO PARCIAL APROBATORIO de 6.00 o cuando no alcance el 80% de asistencia a c
 	</div>
 </div>
 @stop
+

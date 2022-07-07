@@ -11,6 +11,8 @@ class alumno extends Model
     use HasFactory;
 
 
+
+
 }
 
-//
+

@@ -19,7 +19,6 @@ class bajaController extends Controller
 
     public function baja(baja $dato)
     {
-
         $fecha = Carbon::now()->locale('es');
         return view('imprimir.baja', compact('dato', 'fecha'));
     }

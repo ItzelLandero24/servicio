@@ -22,7 +22,7 @@
 			<div class="panel-body">
 				<select id="cursos" class="form-control select2">
 			        @foreach ($alumno as $alumno)
-			        	<option value="{{ $alumno->id }}">{{ $alumno->nombre }}</option>
+			        	<option value="{{ $alumno->nombre }}">{{ $alumno->nombre }}</option>
 			        @endforeach
 			    </select>
 			    <a href="javascript:buscar()" class="form-control btn btn-success">Buscar</a>
@@ -52,7 +52,7 @@
                             @foreach ($alumno->materias() as $materia)
                                 <div class="form-group col-md-12">
                                 <label for="materia_{{ $materia->id }}">{{ $materia->nombre }}: </label>
-                                <input type="number" name="materias[{{ $materia->id }}]" class="form-control" max="10" min="0" id="materia_{{ $materia->id }}">
+                                <input type="number" name="materias[{{ $materia->nombre }}]" class="form-control" max="10" min="0" id="materia_{{ $materia->id }}">
                                 </div>
                             @endforeach
                             <input type="submit" value="Enviar" class="btn btn-primary">

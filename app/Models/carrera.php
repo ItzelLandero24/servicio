@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class carrera extends Model
 {
-    
+
     use HasFactory;
 
     public function alumnos()
